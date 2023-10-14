@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+    <title>FlexBox in Css Q4</title>
+    <style>
+        body{
+            background-color: #070027;
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 962px;
+            background-color: #f4f2fd;
+            padding: 32px 48px;
+            display: flex;
+            gap: 32px;
+        }
+        .card{
+            width: 262px;
+            height: 363px;
+            padding: 32px;
+            gap: 32px;
+            border-radius: 8px;
+            box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+            display: flex;
+            justify-content: center;
+        }
+        .card_header{
+            font-family: 'Nunito Sans', sans-serif;
+            color: #202842;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            padding: 4px 8px 4px 8px;
+            margin-bottom: 0px;
+            margin-bottom: 0;
+        }
+        .card_headerDescription{
+            font-family: 'Nunito Sans', sans-serif;
+            color: #202842;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            margin: 0;
+            padding: 0px 8px 0px 8px;
+        }
+        .card_price{
+            font-family: Sans Serif Collection;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 36px;
+            color: #202842;
+            margin: 16px 0px ;
+            
+        }
+        .card_content{
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+        }
+        .card_details{
+            display: flex;
+            align-items: center;
+            gap:10px;
+            height: 28px;
+        }
+        .card_para{
+            font-family: 'Nunito Sans', sans-serif;
+            color: #202842;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .card_button{
+            margin-top: 32px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            padding: 8px 24px;
+            line-height: 22px;
+            border-radius: 50px;
+            border:1px #fff solid;
+        }
+        .button_light{
+            background-color: #202842;
+            color: #fff;
+        }
+        .dark{
+            background-color: #202842;
+            color: #fff;
+        }
+        .button_dark{
+            background-color:#fff ;
+            color: #202842;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card_inside">
+                <h1 class="card_header">Free Plan</h1>
+                <p class="card_headerDescription">For personal</p>
+                <p class="card_price">$0</p>
+                <div class="card_content">
+                    <div class="card_details">
+                        <img style="width: 22px; height: 22px; "src="https://s3-alpha-sig.figma.com/img/c577/42f7/18f81f4188d856c344b2795236d1a2bf?Expires=1697414400&Signature=ovVEj46lJ6m9EKPNQFuekrFqFHvvFaKO7jh5gMLEJhOuq43HX737bITg7TS8VolXZajBD99kjusKUNrIdWVuboK~Fgrv2JQmbdLsvwMcMQSSB7wj5UYskms-KMgmFlfiMzvx3IMkW7S9ousnC3KvQKTE-f9Ba7S8j5JfiSG4xYDXezsDChDrTVY1i4g2P8EEmpmPYFht6BmS8wu3OBF33dGh1LhUZ4Ki9BO1XiQrpvnc-3GwOSTnzlw2fhBBmdf~ngTx90R9AIfinkcKxy3T11YltpWW6GT2kaJV94m5qD-b1eGmoiO80pVoTgG4VgsMA~AyQGvM-O1se9YBUtNYRw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        <p class="card_para">1 users</p>
+                    </div>
+                    <div class="card_details">
+                        <img style="width: 22px; height: 22px; "src="https://s3-alpha-sig.figma.com/img/c577/42f7/18f81f4188d856c344b2795236d1a2bf?Expires=1697414400&Signature=ovVEj46lJ6m9EKPNQFuekrFqFHvvFaKO7jh5gMLEJhOuq43HX737bITg7TS8VolXZajBD99kjusKUNrIdWVuboK~Fgrv2JQmbdLsvwMcMQSSB7wj5UYskms-KMgmFlfiMzvx3IMkW7S9ousnC3KvQKTE-f9Ba7S8j5JfiSG4xYDXezsDChDrTVY1i4g2P8EEmpmPYFht6BmS8wu3OBF33dGh1LhUZ4Ki9BO1XiQrpvnc-3GwOSTnzlw2fhBBmdf~ngTx90R9AIfinkcKxy3T11YltpWW6GT2kaJV94m5qD-b1eGmoiO80pVoTgG4VgsMA~AyQGvM-O1se9YBUtNYRw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        <p class="card_para">4 Web mails</p>
+                    </div>
+                    <div class="card_details">
+                        <img style="width: 22px; height: 22px; "src="https://s3-alpha-sig.figma.com/img/c577/42f7/18f81f4188d856c344b2795236d1a2bf?Expires=1697414400&Signature=ovVEj46lJ6m9EKPNQFuekrFqFHvvFaKO7jh5gMLEJhOuq43HX737bITg7TS8VolXZajBD99kjusKUNrIdWVuboK~Fgrv2JQmbdLsvwMcMQSSB7wj5UYskms-KMgmFlfiMzvx3IMkW7S9ousnC3KvQKTE-f9Ba7S8j5JfiSG4xYDXezsDChDrTVY1i4g2P8EEmpmPYFht6BmS8wu3OBF33dGh1LhUZ4Ki9BO1XiQrpvnc-3GwOSTnzlw2fhBBmdf~ngTx90R9AIfinkcKxy3T11YltpWW6GT2kaJV94m5qD-b1eGmoiO80pVoTgG4VgsMA~AyQGvM-O1se9YBUtNYRw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        <p class="card_para">Responsive Website</p>
+                    </div>
+                    <div class="card_details">
+                        <img style="width: 22px; height: 22px; "src="https://s3-alpha-sig.figma.com/img/c577/42f7/18f81f4188d856c344b2795236d1a2bf?Expires=1697414400&Signature=ovVEj46lJ6m9EKPNQFuekrFqFHvvFaKO7jh5gMLEJhOuq43HX737bITg7TS8VolXZajBD99kjusKUNrIdWVuboK~Fgrv2JQmbdLsvwMcMQSSB7wj5UYskms-KMgmFlfiMzvx3IMkW7S9ousnC3KvQKTE-f9Ba7S8j5JfiSG4xYDXezsDChDrTVY1i4g2P8EEmpmPYFht6BmS8wu3OBF33dGh1LhUZ4Ki9BO1XiQrpvnc-3GwOSTnzlw2fhBBmdf~ngTx90R9AIfinkcKxy3T11YltpWW6GT2kaJV94m5qD-b1eGmoiO80pVoTgG4VgsMA~AyQGvM-O1se9YBUtNYRw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        <p class="card_para">Free SSL</p>
+                    </div>
+                </div>
+                <button class="card_button button_light">Subscibe Now</button>
+            </div>
+        </div>
+        <div class="card dark">
+            <div class="card_inside">
+                <h1 class="card_header dark">Basic Plan</h1>
+                <p class="card_headerDescription dark">For small business</p>
+                <p class="card_price dark">$29</p>
+                <div class="card_content">
+                    <div class="card_details dark">
+                        <img style="width: 22px; height: 22px; "src="https://s3-alpha-sig.figma.com/img/e0ef/4d5f/86c7a44a8518b8bbebc3d02caa26aa1a?Expires=1697414400&Signature=pvXLCCwQOioDmXL9gnJImwG8~11QPuMwQAHdzG~t9f-vPv4KL5VV2KLKFXgDCRuQBx--l6jYMg9nn4NP6BH2bzs5StRSJWjVsZ7bFx1b48Ye~A2yPzbIA-Ie6flkZHt2W7eL8aoeDIBarBv1i3x4wjubT46kzevpgSzmzYJcRKlhPkKxMKf2F36BopJU-THRv1IVI14sW2xgh7oHcdd4vfY51Rt~vrkyYYY9cdDreSuMcCnCf9wNovD4ftrnR9qujGheEPolmmLnHC0xkx16-nUrdnQ7~41KVQSjNod3AML-4icsdyKBUUaG-Nbhj-MMWA3FAA4JaRAywtw3mLkmuA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        <p class="card_para dark">4 users</p>
+                    </div>
+                    <div class="card_details dark">
+                        <img style="width: 22px; height: 22px; "src="https://s3-alpha-sig.figma.com/img/e0ef/4d5f/86c7a44a8518b8bbebc3d02caa26aa1a?Expires=1697414400&Signature=pvXLCCwQOioDmXL9gnJImwG8~11QPuMwQAHdzG~t9f-vPv4KL5VV2KLKFXgDCRuQBx--l6jYMg9nn4NP6BH2bzs5StRSJWjVsZ7bFx1b48Ye~A2yPzbIA-Ie6flkZHt2W7eL8aoeDIBarBv1i3x4wjubT46kzevpgSzmzYJcRKlhPkKxMKf2F36BopJU-THRv1IVI14sW2xgh7oHcdd4vfY51Rt~vrkyYYY9cdDreSuMcCnCf9wNovD4ftrnR9qujGheEPolmmLnHC0xkx16-nUrdnQ7~41KVQSjNod3AML-4icsdyKBUUaG-Nbhj-MMWA3FAA4JaRAywtw3mLkmuA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        <p class="card_para dark">10 Web mails</p>
+                    </div>
+                    <div class="card_details">
+                        <img style="width: 22px; height: 22px; "src="https://s3-alpha-sig.figma.com/img/e0ef/4d5f/86c7a44a8518b8bbebc3d02caa26aa1a?Expires=1697414400&Signature=pvXLCCwQOioDmXL9gnJImwG8~11QPuMwQAHdzG~t9f-vPv4KL5VV2KLKFXgDCRuQBx--l6jYMg9nn4NP6BH2bzs5StRSJWjVsZ7bFx1b48Ye~A2yPzbIA-Ie6flkZHt2W7eL8aoeDIBarBv1i3x4wjubT46kzevpgSzmzYJcRKlhPkKxMKf2F36BopJU-THRv1IVI14sW2xgh7oHcdd4vfY51Rt~vrkyYYY9cdDreSuMcCnCf9wNovD4ftrnR9qujGheEPolmmLnHC0xkx16-nUrdnQ7~41KVQSjNod3AML-4icsdyKBUUaG-Nbhj-MMWA3FAA4JaRAywtw3mLkmuA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        <p class="card_para dark">Responsive Website</p>
+                    </div>
+                    <div class="card_details">
+                        <img style="width: 22px; height: 22px; "src="https://s3-alpha-sig.figma.com/img/e0ef/4d5f/86c7a44a8518b8bbebc3d02caa26aa1a?Expires=1697414400&Signature=pvXLCCwQOioDmXL9gnJImwG8~11QPuMwQAHdzG~t9f-vPv4KL5VV2KLKFXgDCRuQBx--l6jYMg9nn4NP6BH2bzs5StRSJWjVsZ7bFx1b48Ye~A2yPzbIA-Ie6flkZHt2W7eL8aoeDIBarBv1i3x4wjubT46kzevpgSzmzYJcRKlhPkKxMKf2F36BopJU-THRv1IVI14sW2xgh7oHcdd4vfY51Rt~vrkyYYY9cdDreSuMcCnCf9wNovD4ftrnR9qujGheEPolmmLnHC0xkx16-nUrdnQ7~41KVQSjNod3AML-4icsdyKBUUaG-Nbhj-MMWA3FAA4JaRAywtw3mLkmuA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        <p class="card_para dark">Free SSL</p>
+                    </div>
+                </div>
+                <button class="card_button button_dark">Subscibe Now</button>
+            </div>
+          
+        </div>
+        <div class="card">
+            <div class="card_inside">
+                <h1 class="card_header ">Pro Plan</h1>
+                <p class="card_headerDescription">For enterprise</p>
+                <p class="card_price">$49</p>
+                <div class="card_content">
+                    <div class="card_details">
+                        <img style="width: 22px; height: 22px; "src="https://s3-alpha-sig.figma.com/img/c577/42f7/18f81f4188d856c344b2795236d1a2bf?Expires=1697414400&Signature=ovVEj46lJ6m9EKPNQFuekrFqFHvvFaKO7jh5gMLEJhOuq43HX737bITg7TS8VolXZajBD99kjusKUNrIdWVuboK~Fgrv2JQmbdLsvwMcMQSSB7wj5UYskms-KMgmFlfiMzvx3IMkW7S9ousnC3KvQKTE-f9Ba7S8j5JfiSG4xYDXezsDChDrTVY1i4g2P8EEmpmPYFht6BmS8wu3OBF33dGh1LhUZ4Ki9BO1XiQrpvnc-3GwOSTnzlw2fhBBmdf~ngTx90R9AIfinkcKxy3T11YltpWW6GT2kaJV94m5qD-b1eGmoiO80pVoTgG4VgsMA~AyQGvM-O1se9YBUtNYRw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        <p class="card_para">Unlimited users</p>
+                    </div>
+                    <div class="card_details">
+                        <img style="width: 22px; height: 22px; "src="https://s3-alpha-sig.figma.com/img/c577/42f7/18f81f4188d856c344b2795236d1a2bf?Expires=1697414400&Signature=ovVEj46lJ6m9EKPNQFuekrFqFHvvFaKO7jh5gMLEJhOuq43HX737bITg7TS8VolXZajBD99kjusKUNrIdWVuboK~Fgrv2JQmbdLsvwMcMQSSB7wj5UYskms-KMgmFlfiMzvx3IMkW7S9ousnC3KvQKTE-f9Ba7S8j5JfiSG4xYDXezsDChDrTVY1i4g2P8EEmpmPYFht6BmS8wu3OBF33dGh1LhUZ4Ki9BO1XiQrpvnc-3GwOSTnzlw2fhBBmdf~ngTx90R9AIfinkcKxy3T11YltpWW6GT2kaJV94m5qD-b1eGmoiO80pVoTgG4VgsMA~AyQGvM-O1se9YBUtNYRw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        <p class="card_para">Unlimited Web mails</p>
+                    </div>
+                    <div class="card_details">
+                        <img style="width: 22px; height: 22px; "src="https://s3-alpha-sig.figma.com/img/c577/42f7/18f81f4188d856c344b2795236d1a2bf?Expires=1697414400&Signature=ovVEj46lJ6m9EKPNQFuekrFqFHvvFaKO7jh5gMLEJhOuq43HX737bITg7TS8VolXZajBD99kjusKUNrIdWVuboK~Fgrv2JQmbdLsvwMcMQSSB7wj5UYskms-KMgmFlfiMzvx3IMkW7S9ousnC3KvQKTE-f9Ba7S8j5JfiSG4xYDXezsDChDrTVY1i4g2P8EEmpmPYFht6BmS8wu3OBF33dGh1LhUZ4Ki9BO1XiQrpvnc-3GwOSTnzlw2fhBBmdf~ngTx90R9AIfinkcKxy3T11YltpWW6GT2kaJV94m5qD-b1eGmoiO80pVoTgG4VgsMA~AyQGvM-O1se9YBUtNYRw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        <p class="card_para">Responsive Website</p>
+                    </div>
+                    <div class="card_details">
+                        <img style="width: 22px; height: 22px; "src="https://s3-alpha-sig.figma.com/img/c577/42f7/18f81f4188d856c344b2795236d1a2bf?Expires=1697414400&Signature=ovVEj46lJ6m9EKPNQFuekrFqFHvvFaKO7jh5gMLEJhOuq43HX737bITg7TS8VolXZajBD99kjusKUNrIdWVuboK~Fgrv2JQmbdLsvwMcMQSSB7wj5UYskms-KMgmFlfiMzvx3IMkW7S9ousnC3KvQKTE-f9Ba7S8j5JfiSG4xYDXezsDChDrTVY1i4g2P8EEmpmPYFht6BmS8wu3OBF33dGh1LhUZ4Ki9BO1XiQrpvnc-3GwOSTnzlw2fhBBmdf~ngTx90R9AIfinkcKxy3T11YltpWW6GT2kaJV94m5qD-b1eGmoiO80pVoTgG4VgsMA~AyQGvM-O1se9YBUtNYRw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        <p class="card_para">Free SSL + SEO</p>
+                    </div>
+                </div>
+                <button class="card_button button_light">Subscibe Now</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

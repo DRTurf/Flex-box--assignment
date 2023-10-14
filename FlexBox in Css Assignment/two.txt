@@ -1,0 +1,9 @@
+Justify-content: Aligns elements with the main axis of the parent div.
+
+Align-items: Aligns elements with the cross/other axis of the parent div.
+
+Gap: Puts a designated space between all the elements in the parent div.
+
+Flex-direction: Determines the direction of the main axis on which "flex" property should be applied.
+
+Flex-wrap: Sets whether flex items are forced onto one line or can wrap onto multiple lines.
